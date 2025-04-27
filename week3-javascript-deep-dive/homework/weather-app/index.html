@@ -6,6 +6,88 @@
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
+  <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Input styling */
+#city {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+#getWeather {
+  padding: 10px 20px;
+  background-color: #f39c45;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#getWeather:hover {
+  background-color: #e38c3a;
+}
+
+/* Weather info display */
+#weather {
+  margin-top: 30px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+#weather h2 {
+  margin-bottom: 10px;
+}
+
+#weather img {
+  width: 80px;
+  height: 80px;
+}
+
+#weather p {
+  font-size: 18px;
+  color: #333;
+  margin: 8px 0;
+}
+
+  </style>
   <body>
     <h1>Weather App</h1>
     <input type="text" id="city" placeholder="Enter city name" />

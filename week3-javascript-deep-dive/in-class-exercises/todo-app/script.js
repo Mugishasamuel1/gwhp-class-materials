@@ -18,12 +18,12 @@ function displayTodos(todos) {
   container.innerHTML = ""; // Clear previous content
 
   // Filter completed todos and add priority
-  //   const enrichedTodos = todos.map((todo) => ({ ...todo, priority: "High" }));
+    const enrichedTodos = todos.map((todo) => ({ ...todo, priority: "High" }));
 
-  //   if (enrichedTodos.length === 0) {
-  //     container.innerHTML = "<p>No completed todos found.</p>";
-  //     return;
-  //   }
+    if (enrichedTodos.length === 0) {
+      container.innerHTML = "<p>No completed todos found.</p>";
+      return;
+    }
 
   const modifiedTodos = todos
     // .filter((todo) => todo.completed)
